@@ -16,8 +16,6 @@ useEffect(() => {
       const timer = setTimeout(() => {
         setMessage('');
       }, 5000);
-
-      
       return () => clearTimeout(timer);
     }
   }, [message]);
