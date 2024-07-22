@@ -1,11 +1,16 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import LoginObjectState from './LoginObjectState';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes';
+import { UserProvider } from './context/UserContext';
 
-function App() {
- 
+const App = () => {
   return (
-      <LoginObjectState/>
-  )
-}
+    <UserProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </UserProvider>
+  );
+};
 
 export default App;

@@ -22,22 +22,12 @@ useEffect(() => {
 
 const handleLogin=()=>{
     const user=users.find(user=>user.username===username && user.password===password);
-//    let user = null;
-//    users.forEach(u => { if(u.username===username && u.password===password){
-//     user=u;
-//    }
-    
-//    });
     if(user){
         setMessage("Login successful");
     }else{
         setMessage("Invalid credentials");
     }
 }
-
-
-
-
 
 
 return(
