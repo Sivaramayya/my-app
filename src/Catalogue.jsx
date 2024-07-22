@@ -28,12 +28,12 @@ const Catalogue = () => {
       <Card className="bg-dark text-white mt-2 mb-2">
       <Dropdown  className='ml-5 mt-3'>
         <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Food Menu
+          {selectedItem || 'Select an item'}
         </Dropdown.Toggle>
 
         <Dropdown.Menu>
           {availableItems.map((item, id) => (
-            <Dropdown.Item key={id} onClick={handleSelectedItem}>{item}</Dropdown.Item>
+            <Dropdown.Item key={id} onClick={handleSelectedItem}>{item}</Dropdown.Item> 
           ))}
         </Dropdown.Menu>
       </Dropdown>
