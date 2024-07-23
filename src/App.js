@@ -1,10 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import LoginObjectState from './LoginObjectState';
+import ListGroup from "./ListGroup";
+import ListGroupProps from "./ListGroupProps";
+import Calculator from './Calculator';
 
 function App() {
- 
+  let teachers=['siva','vamsi','navya','divya','shan']
   return (
-      <LoginObjectState/>
+    <ListGroupProps items={teachers} heading="LIst of Teachers"/>
+    
   )
 }
 
